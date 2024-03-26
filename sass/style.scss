@@ -1,6 +1,10 @@
-@use "variables";
+@use "variables" as var;
 
 body{
     font-family: "Rubik", sans-serif;
-    background-color: variables.$color-bg;
+    background-color: var.$color-bg;
+}
+
+.container{
+    background-color: var.$background-color;
 }
