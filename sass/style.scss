@@ -2,7 +2,6 @@
 
 body{
     font-family: "Rubik", sans-serif;
-    background-color: var.$color-bg;
 }
 
 .container{
@@ -10,8 +9,14 @@ body{
 }
 
 
-
 .a{
     color: #ffff;
 
 }
+.info-base{
+    .text{
+        font-size: 64px;
+        color: #FFB72D;
+    }
+    width: 845px;
+}   
