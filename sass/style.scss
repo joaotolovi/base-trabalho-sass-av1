@@ -2,10 +2,15 @@
 
 body{
     font-family: "Rubik", sans-serif;
+    background-color: var.$background-color;
 }
 
 .container{
-    background-color: var.$background-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -17,6 +22,76 @@ body{
     .text{
         font-size: 64px;
         color: #FFB72D;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        text-align: center;
     }
     width: 845px;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
 }   
+
+.info{
+    display: flex;
+    position: relative;
+    width: 400px;
+    max-height: 412px;
+    margin-top: 42px;
+}
+
+.point{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.point img {
+    width: 18px;
+    height: 18px;
+}
+
+.point p{
+    color: #888888;
+    font-weight: 350;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.pl{
+    position: absolute; top: 0; left: 0;
+}
+
+.pr{
+    position: absolute; right: 0;
+}
+
+.frame-bottom{
+    margin-top: 80px;
+    width: max-content;
+    display: flex;
+}
+
+input{
+    border-style: none;
+    width: 384px;
+    height: 58px;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.button{
+    width: 178px;
+    height: 58px;
+    border-style: none;
+    background-color: #FFB72D;
+    margin: 20px;
+    border-radius: 50px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
