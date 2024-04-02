@@ -12,7 +12,43 @@ body {
 }
 
 .a {
-  color: white;
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.left-div-header {
+  margin-right: auto;
+  margin-right: 352px;
+}
+
+.right-div-header {
+  margin-left: auto;
+  margin-left: 352px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+img {
+  object-fit: contain;
+}
+
+.register-button {
+  height: 43px;
+  border-radius: 100px;
+}
+
+.menubar-item {
+  margin: 20px;
 }
 
 .info-base {
@@ -21,13 +57,16 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-top: 110px;
 }
 .info-base .text {
-  font-size: 64px;
   color: #FFB72D;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
   text-align: center;
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .info {
@@ -35,7 +74,7 @@ body {
   position: relative;
   width: 400px;
   max-height: 412px;
-  margin-top: 42px;
+  margin-top: 44px;
 }
 
 .point {
@@ -70,18 +109,39 @@ body {
 
 .frame-bottom {
   margin-top: 80px;
-  width: -moz-max-content;
   width: max-content;
   display: flex;
 }
 
 input {
-  border-style: none;
   width: 384px;
   height: 58px;
   margin: 20px;
   border-radius: 50px;
+  text-align: start;
+  border: solid 1px #888888;
+  background-color: black;
+}
+
+.join-text {
+  color: #FFB72D;
   text-align: center;
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: norma;
+}
+
+.join-text {
+  width: 592px;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 100px;
+}
+
+input {
+  padding-left: 24px;
 }
 
 .button {
