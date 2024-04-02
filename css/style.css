@@ -39,7 +39,8 @@ body {
 }
 
 img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .register-button {
@@ -109,6 +110,7 @@ img {
 
 .frame-bottom {
   margin-top: 80px;
+  width: -moz-max-content;
   width: max-content;
   display: flex;
 }
