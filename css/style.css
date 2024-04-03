@@ -14,21 +14,30 @@ body {
 .a {
   color: #FFF;
   text-align: center;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+p {
+  color: #7D7D7D;
+  text-align: center;
+}
+
+hr {
+  border-color: #4f4f4f;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .left-div-header {
   margin-right: auto;
-  margin-right: 352px;
 }
 
 .right-div-header {
   margin-left: auto;
-  margin-left: 352px;
 }
 
 .home {
@@ -44,6 +53,10 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  min-width: 100px;
+}
+
 .register-button {
   height: 43px;
   border-radius: 100px;
@@ -54,7 +67,7 @@ img {
 }
 
 .info-base {
-  width: 845px;
+  max-width: 845px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -64,7 +77,7 @@ img {
 .info-base .text {
   color: #FFB72D;
   text-align: center;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
@@ -84,6 +97,7 @@ img {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 10px;
 }
 
 .point img {
@@ -92,52 +106,40 @@ img {
 }
 
 .point p {
-  color: #888888;
-  font-weight: 350;
+  color: #7D7D7D;
+  font-weight: 400;
   font-size: 16px;
   margin: 5px;
 }
 
-.pl {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.pr {
-  position: absolute;
-  right: 0;
-}
-
 .frame-bottom {
-  margin-top: 80px;
+  margin-top: 20px;
   width: -moz-max-content;
   width: max-content;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input {
-  width: 384px;
+  max-width: 384px;
   height: 58px;
   margin: 20px;
   border-radius: 50px;
   text-align: start;
-  border: solid 1px #888888;
+  border: solid 1px #4f4f4f;
   background-color: black;
 }
 
 .join-text {
   color: #FFB72D;
   text-align: center;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
-  line-height: norma;
-}
-
-.join-text {
-  width: 592px;
+  line-height: normal;
+  max-width: 592px;
   justify-content: center;
   gap: 32px;
   margin-top: 100px;
@@ -186,7 +188,7 @@ input {
   padding: 32px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 490px) {
   .features-buttons {
     flex-direction: column;
     width: auto;
@@ -199,23 +201,24 @@ input {
     font-size: 25px;
     text-align: center;
   }
+  .point {
+    justify-content: center;
+  }
   .info {
-    width: auto;
+    width: 100%;
+    flex-direction: column;
   }
   .frame-bottom {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
-  input {
+  .join-text, input {
     width: 90%;
   }
   .button {
     width: 90%;
   }
-  .left-div-header {
-    display: none;
-  }
-  .right-div-header {
+  .left-div-header, .right-div-header {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

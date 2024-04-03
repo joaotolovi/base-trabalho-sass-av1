@@ -1,225 +1,224 @@
 @use "variables" as var;
 
-body{
-    font-family: "Rubik", sans-serif;
+body {
+    font-family: var.$font-family-rubik;
     background-color: var.$background-color;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.container {
+    width: var.$width-container;
+    display: var.$display-flex;
+    justify-content: var.$justify-content-center;
+    align-items: var.$align-items-center;
+    flex-direction: var.$flex-direction-column;
 }
 
-
-.a{
-    color: #FFF;
-    text-align: center;
-    font-family: Rubik;
-    font-size: 16px;
+.a {
+    color: var.$text-color-white;
+    text-align: var.$text-align-center;
+    font-family: var.$font-family-rubik;
+    font-size: var.$font-size-small;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var.$font-weight-normal;
     line-height: normal;
+}
 
+p {
+    color: var.$text-color-gray;
+    text-align: var.$text-align-center;
+}
+
+hr {
+    border-color: var.$border-color;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .left-div-header {
-    margin-right: auto;
-    margin-right: 352px;
+    margin-right: var.$width-left-div-header;
 }
 
 .right-div-header {
-    margin-left: auto;
-    margin-left: 352px;
+    margin-left: var.$width-right-div-header;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+.home {
+    display: var.$display-flex;
+    justify-content: var.$justify-content-center;
+    align-items: var.$align-items-center;
+    width: var.$width-home;
 }
 
 img {
-    object-fit: contain;
-    max-width: 100%;
+    object-fit: var.$object-fit-contain;
+    max-width: var.$max-width-img;
 }
 
-.register-button{
-    height: 43px;
-    border-radius: 100px;
+.logo {
+    min-width: var.$min-width-logo;
 }
 
-.menubar-item{
-    margin: 20px;
+.register-button {
+    height: var.$width-register-button;
+    border-radius: var.$border-radius-rounded;
 }
 
-.info-base{
-    .text{
-        color: #FFB72D;
+.menubar-item {
+    margin: var.$margin-menubar-item;
+}
 
-        text-align: center;
-        font-family: Rubik;
-        font-size: 64px;
+.info-base {
+    .text {
+        color: var.$text-color-yellow;
+        text-align: var.$text-align-center;
+        font-family: var.$font-family-rubik;
+        font-size: var.$font-size-large;
         font-style: normal;
-        font-weight: 600;
+        font-weight: var.$font-weight-bold;
         line-height: normal;
-        
     }
-    width: 845px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 110px;
+    max-width: var.$width-info-base;
+    align-items: var.$align-items-center;
+    justify-content: var.$justify-content-center;
+    display: var.$display-flex;
+    flex-direction: var.$flex-direction-column;
+    margin-top: var.$margin-top-info-base;
 }
 
-.info{
-    display: flex;
+.info {
+    display: var.$display-flex;
     position: relative;
-    width: 400px;
-    max-height: 412px;
-    margin-top: 44px;
+    width: var.$width-info;
+    max-height: var.$max-height-info;
+    margin-top: var.$margin-top-info;
 }
 
-.point{
-    display: flex;
+.point {
+    display: var.$display-flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: 10px;
 }
 
 .point img {
-    width: 18px;
-    height: 18px;
+    width: var.$width-point-img;
+    height: var.$height-point-img;
 }
 
-.point p{
-    color: #888888;
-    font-weight: 350;
-    font-size: 16px;
+.point p {
+    color: var.$text-color-gray;
+    font-weight: var.$font-weight-normal;
+    font-size: var.$width-point-p;
     margin: 5px;
 }
 
-.pl{
-    position: absolute; top: 0; left: 0;
+.frame-bottom {
+    margin-top: var.$margin-top-frame-bottom;
+    width: var.$width-frame-bottom;
+    display: var.$display-flex;
+    align-items: var.$align-items-center;
+    justify-content: var.$justify-content-center;
 }
 
-.pr{
-    position: absolute; right: 0;
-}
-
-.frame-bottom{
-    margin-top: 80px;
-    width: max-content;
-    display: flex;
-}
-
-input{
-    width: 384px;
-    height: 58px;
-    margin: 20px;
-    border-radius: 50px;
+input {
+    max-width: var.$max-width-input;
+    height: var.$height-input;
+    margin: var.$margin-input;
+    border-radius: var.$border-radius-button;
     text-align: start;
-    border: solid 1px #888888;
+    border: solid 1px var.$border-color;
     background-color: black;
 }
 
-.join-text{
-    color: #FFB72D;
-    text-align: center;
-    font-family: Rubik;
-    font-size: 64px;
+.join-text {
+    color: var.$text-color-yellow;
+    text-align: var.$text-align-center;
+    font-family: var.$font-family-rubik;
+    font-size: var.$font-size-large;
     font-style: normal;
-    font-weight: 600;
-    line-height: norma;
-}
-
-.join-text{
-    width: 592px;
-    justify-content: center;
+    font-weight: var.$font-weight-bold;
+    line-height: normal;
+    max-width: var.$width-join-text;
+    justify-content: var.$justify-content-center;
     gap: 32px;
-    margin-top: 100px;
+    margin-top: var.$margin-top-join-text;
 }
 
-input{
-    padding-left: 24px;
+input {
+    padding-left: var.$padding-input;
 }
 
-.button{
-    width: 178px;
-    height: 58px;
+.button {
+    width: var.$width-button;
+    height: var.$height-button;
     border-style: none;
-    background-color: #FFB72D;
-    margin: 20px;
-    border-radius: 50px;
-    text-align:center;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    background-color: var.$background-color-button;
+    margin: var.$margin-button;
+    border-radius: var.$border-radius-button;
+    text-align: center;
+    display: var.$display-flex;
+    align-items: var.$align-items-center;
+    justify-content: var.$justify-content-center;
     max-width: 100%;
 }
+
 .features-div {
-    display: flex;
+    display: var.$display-flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    justify-content: center; 
+    justify-content: var.$justify-content-center;
 }
 
 .features-buttons {
-    display: flex;
+    display: var.$display-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 620px;
-    height: 640px;
+    width: var.$width-features-buttons;
+    height: var.$height-features-buttons;
     gap: 10px;
 }
-.bt-ft{
-    width: 235px;
-    height: 238px;
-    background-color: #FEF6F0;
+
+.bt-ft {
+    width: var.$width-bt-ft;
+    height: var.$height-bt-ft;
+    background-color: var.$color-card;
     border-radius: 10px;
-    padding: 32px;
-
-
+    padding: var.$padding-bt-ft;
 }
 
-
-@media (max-width: 390px) {
+@media (max-width: 490px) {
     .features-buttons {
         flex-direction: column;
         width: auto; 
         height: auto; 
     }
-    .info-base{
+    .info-base {
         width: auto;
-        .text{
+        .text {
             font-size: 25px;
-            text-align:center;
+            text-align: center;
         }
     }
-    .info{
-        width: auto;
+    .point {
+        justify-content: center;
     }
-    .frame-bottom{
+    .info {
+        width: 100%;
         flex-direction: column;
+    }
+    .frame-bottom {
+        flex-direction: column;
+        width: 100%;
+    }
+    .join-text, input {
         width: 90%;
     }
-    input{
+    .button {
         width: 90%;
     }
-    .button{
-        width: 90%;
-    }
-    .left-div-header {
+    .left-div-header, .right-div-header {
         display: none;
     }
-    
-    .right-div-header {
-        display: none;
-    }
-    
 }
