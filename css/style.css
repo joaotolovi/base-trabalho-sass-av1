@@ -41,6 +41,7 @@ body {
 img {
   -o-object-fit: contain;
      object-fit: contain;
+  max-width: 100%;
 }
 
 .register-button {
@@ -157,4 +158,64 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+}
+
+.features-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 620px;
+  height: 640px;
+  gap: 10px;
+}
+
+.bt-ft {
+  width: 235px;
+  height: 238px;
+  background-color: #FEF6F0;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+@media (max-width: 390px) {
+  .features-buttons {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .info-base {
+    width: auto;
+  }
+  .info-base .text {
+    font-size: 25px;
+    text-align: center;
+  }
+  .info {
+    width: auto;
+  }
+  .frame-bottom {
+    flex-direction: column;
+    width: 90%;
+  }
+  input {
+    width: 90%;
+  }
+  .button {
+    width: 90%;
+  }
+  .left-div-header {
+    display: none;
+  }
+  .right-div-header {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
